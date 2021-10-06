@@ -1,0 +1,13 @@
+{
+  "private":true,
+  "dependencies": {
+    "axios": "^0.22.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.8.0"
+  }
+,
+  "scripts": {
+    "build":"webpack --config=webpack.config.js"
+  }
+}
