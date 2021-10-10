@@ -2,46 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo's List</title>
+    <title>Cart</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body>
-    
-
-    <div class="container py -5">
-        <h1>ToDo's List</h1>
+    <div class="container">
+       <br>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-7 products-container">
                 <table class="table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Title</th>
-                            <th>Completed</th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody id="todolist"></tbody>
+                    <tbody id="product-list"></tbody> 
                 </table>
             </div>
-            <div class="col-md-4">
-                <form action="" method="post">
-                    <div class="input-group input-group-lg">
-                        <input type="text" name="title" placeholder="Title" class="form-control">
-                        <button class="btn btn-primary" type="submit">Add</button>
-                    </div>
-                </form>
+            <div class="col-md-5" style="background-color:whitesmoke;">
+               <h1>Cart</h1>
+               <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>price</th>
+                            <th>Amount</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-list"></tbody> 
+                </table>
+                 
+                <div>
+                    <p>Total</p>
+                    <p id="cart-Total"></p>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="js/todo.js"></script>
-    </div>
-
-
-    
+    <script src="js/cart.js"></script>
 </body>
 </html>
